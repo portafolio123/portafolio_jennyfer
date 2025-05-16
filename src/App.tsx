@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import PageNavigation from './components/PageNavigation';
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import InfoPersonal from './pages/InfoPersonal';
 import QueSigue from './pages/QueSigue';
@@ -43,6 +44,7 @@ function App() {
         </Routes>
         <PageNavigation />
       </div>
+      <Footer />
     </Router>
   );
 }

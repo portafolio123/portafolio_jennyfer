@@ -26,12 +26,7 @@ const HeroSection: React.FC = () => {
           <p className="text-lg font-semibold mb-8">
             Así que, ¿Qué espera?
           </p>
-          <Link 
-            to="/listo" 
-            className="inline-flex items-center px-6 py-3 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-300"
-          >
-            Comenzar
-          </Link>
+
         </div>
       </div>
     </div>
