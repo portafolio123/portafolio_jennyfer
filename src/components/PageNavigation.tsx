@@ -9,7 +9,15 @@ const routes = [
   { path: '/que-sigue', label: '¿Qué sigue?' },
   { path: '/informacion-asignatura', label: 'Información de la Asignatura' },
   { path: '/medio-ciclo', label: 'Medio Ciclo' },
-  { path: '/aprendizaje-contacto', label: 'Aprendizaje en Contacto con el Docente' }
+  { path: '/aprendizaje-contacto', label: 'Aprendizaje en Contacto con el Docente' },
+  { path: '/aprendizaje-practico', label: 'Aprendizaje Práctico Experimental' },
+  { path: '/aprendizaje-autonomo', label: 'Aprendizaje Autónomo' },
+  { path: '/fin-ciclo', label: 'Fin de Ciclo' },
+  { path: '/aprendizaje-contacto-2', label: 'Aprendizaje en Contacto con el Docente 2' },
+  { path: '/aprendizaje-practico-2', label: 'Aprendizaje Práctico Experimental 2' },
+  { path: '/aprendizaje-autonomo-2', label: 'Aprendizaje Autónomo 2' },
+  { path: '/logros-alcanzados', label: 'Logros Alcanzados' },
+  { path: '/gracias', label: 'Gracias' }
 ];
 
 const PageNavigation: React.FC = () => {

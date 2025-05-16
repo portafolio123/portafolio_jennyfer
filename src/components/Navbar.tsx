@@ -5,6 +5,27 @@ import { Link } from 'react-router-dom';
 const Navbar: React.FC = () => {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
 
+  const mainLinks = [
+    { path: '/', label: 'Página Principal' },
+    { path: '/listo', label: '¿Listo?' },
+    { path: '/informacion-personal', label: 'Información Personal' },
+    { path: '/que-sigue', label: '¿Qué sigue?' },
+    { path: '/informacion-asignatura', label: 'Información de la Asignatura' },
+    { path: '/medio-ciclo', label: 'Medio Ciclo' },
+    { path: '/aprendizaje-contacto', label: 'Aprendizaje en Contacto con el D...' }
+  ];
+
+  const moreLinks = [
+    { path: '/aprendizaje-practico', label: 'Aprendizaje Práctico Experimental' },
+    { path: '/aprendizaje-autonomo', label: 'Aprendizaje Autónomo' },
+    { path: '/fin-ciclo', label: 'Fin de Ciclo' },
+    { path: '/aprendizaje-contacto-2', label: 'Aprendizaje en Contacto 2' },
+    { path: '/aprendizaje-practico-2', label: 'Aprendizaje Práctico 2' },
+    { path: '/aprendizaje-autonomo-2', label: 'Aprendizaje Autónomo 2' },
+    { path: '/logros-alcanzados', label: 'Logros Alcanzados' },
+    { path: '/gracias', label: 'Gracias' }
+  ];
+
   return (
     <nav className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
@@ -12,27 +33,15 @@ const Navbar: React.FC = () => {
           <div className="text-xl font-semibold text-gray-800">Portafolio</div>
           
           <div className="hidden md:flex items-center space-x-4 ml-10">
-            <Link to="/" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              Página Principal
-            </Link>
-            <Link to="/listo" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              ¿Listo?
-            </Link>
-            <Link to="/informacion-personal" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              Información Personal
-            </Link>
-            <Link to="/que-sigue" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              ¿Qué sigue?
-            </Link>
-            <Link to="/informacion-asignatura" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              Información de la Asignatura
-            </Link>
-            <Link to="/medio-ciclo" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              Medio Ciclo
-            </Link>
-            <Link to="/aprendizaje-contacto" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              Aprendizaje en Contacto con el D...
-            </Link>
+            {mainLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                {link.label}
+              </Link>
+            ))}
             
             <div className="relative">
               <button
@@ -43,13 +52,16 @@ const Navbar: React.FC = () => {
               </button>
               
               {isMoreOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
-                  <Link to="/additional-1" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    Additional Link 1
-                  </Link>
-                  <Link to="/additional-2" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                    Additional Link 2
-                  </Link>
+                <div className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1">
+                  {moreLinks.map((link) => (
+                    <Link
+                      key={link.path}
+                      to={link.path}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
@@ -61,7 +73,6 @@ const Navbar: React.FC = () => {
             </button>
           </div>
           
-          {/* Mobile menu button */}
           <div className="md:hidden ml-4">
             <button className="text-gray-500 hover:text-gray-900 focus:outline-none">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
