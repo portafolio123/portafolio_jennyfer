@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
       <div className="relative z-10 text-center text-white px-4">
         <h1 className="text-7xl font-cursive mb-4 animate-fadeIn">¡Bienvenido!</h1>
         <p className="text-xl font-light italic mb-8 animate-fadeIn animation-delay-300">
-          Hecho por: Valeria del Rocío Santos Naranjo
+          Hecho por: Jennyfer Roxana
         </p>
         
         <div className="max-w-2xl mx-auto bg-black/30 backdrop-blur-sm p-6 rounded-lg animate-fadeIn animation-delay-600">

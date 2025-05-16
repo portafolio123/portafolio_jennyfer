@@ -12,16 +12,16 @@ const Navbar: React.FC = () => {
     { path: '/que-sigue', label: '¿Qué sigue?' },
     { path: '/informacion-asignatura', label: 'Información de la Asignatura' },
     { path: '/medio-ciclo', label: 'Medio Ciclo' },
-    { path: '/aprendizaje-contacto', label: 'Aprendizaje en Contacto con el D...' }
+    { path: '/aprendizaje-contacto-docente', label: 'Aprendizaje en Contacto con el Docente' }
   ];
 
   const moreLinks = [
-    { path: '/aprendizaje-practico', label: 'Aprendizaje Práctico Experimental' },
+    { path: '/aprendizaje-practico-experimental', label: 'Aprendizaje Práctico Experimental' },
     { path: '/aprendizaje-autonomo', label: 'Aprendizaje Autónomo' },
     { path: '/fin-ciclo', label: 'Fin de Ciclo' },
-    { path: '/aprendizaje-contacto-2', label: 'Aprendizaje en Contacto 2' },
-    { path: '/aprendizaje-practico-2', label: 'Aprendizaje Práctico 2' },
-    { path: '/aprendizaje-autonomo-2', label: 'Aprendizaje Autónomo 2' },
+    { path: '/aprendizaje-contacto-docente-2', label: 'Aprendizaje en Contacto con el Docente' },
+    { path: '/aprendizaje-practico-experimental-2', label: 'Aprendizaje Práctico Experimentl' },
+    { path: '/aprendizaje-autonomo-2', label: 'Aprendizaje Autónomo' },
     { path: '/logros-alcanzados', label: 'Logros Alcanzados' },
     { path: '/gracias', label: 'Gracias' }
   ];

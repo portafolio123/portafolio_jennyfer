@@ -7,15 +7,16 @@ import InfoPersonal from './pages/InfoPersonal';
 import QueSigue from './pages/QueSigue';
 import InfoAsignatura from './pages/InfoAsignatura';
 import MedioCiclo from './pages/MedioCiclo';
-import AprendizajeContacto from './pages/AprendizajeContacto';
-import AprendizajePractico from './pages/AprendizajePractico';
+import AprendizajeContactoDocente from './pages/AprendizajeContactoDocente';
+import AprendizajePracticoExperimental from './pages/AprendizajePracticoExperimental';
 import AprendizajeAutonomo from './pages/AprendizajeAutonomo';
 import FinCiclo from './pages/FinCiclo';
-import AprendizajeContacto2 from './pages/AprendizajeContacto2';
-import AprendizajePractico2 from './pages/AprendizajePractico2';
+import AprendizajeContactoDocente2 from './pages/AprendizajeContactoDocente2';
+import AprendizajePracticoExperimental2 from './pages/AprendizajePracticoExperimental2';
 import AprendizajeAutonomo2 from './pages/AprendizajeAutonomo2';
 import LogrosAlcanzados from './pages/LogrosAlcanzados';
 import Gracias from './pages/Gracias';
+
 import Listo from './pages/Listo';
 
 function App() {
@@ -30,12 +31,12 @@ function App() {
           <Route path="/que-sigue" element={<QueSigue />} />
           <Route path="/informacion-asignatura" element={<InfoAsignatura />} />
           <Route path="/medio-ciclo" element={<MedioCiclo />} />
-          <Route path="/aprendizaje-contacto" element={<AprendizajeContacto />} />
-          <Route path="/aprendizaje-practico" element={<AprendizajePractico />} />
+          <Route path="/aprendizaje-contacto-docente" element={<AprendizajeContactoDocente />} />
+          <Route path="/aprendizaje-practico-experimental" element={<AprendizajePracticoExperimental />} />
           <Route path="/aprendizaje-autonomo" element={<AprendizajeAutonomo />} />
           <Route path="/fin-ciclo" element={<FinCiclo />} />
-          <Route path="/aprendizaje-contacto-2" element={<AprendizajeContacto2 />} />
-          <Route path="/aprendizaje-practico-2" element={<AprendizajePractico2 />} />
+          <Route path="/aprendizaje-contacto-docente-2" element={<AprendizajeContactoDocente2 />} />
+          <Route path="/aprendizaje-practico-experimental-2" element={<AprendizajePracticoExperimental2 />} />
           <Route path="/aprendizaje-autonomo-2" element={<AprendizajeAutonomo2 />} />
           <Route path="/logros-alcanzados" element={<LogrosAlcanzados />} />
           <Route path="/gracias" element={<Gracias />} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Book, Users, Clock, Calendar } from 'lucide-react';
 
-const AprendizajeContacto2: React.FC = () => {
+const AprendizajeContactoDocente2: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
@@ -112,4 +112,4 @@ const AprendizajeContacto2: React.FC = () => {
   );
 };
 
-export default AprendizajeContacto2;
+export default AprendizajeContactoDocente2;
