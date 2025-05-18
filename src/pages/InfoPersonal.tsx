@@ -1,6 +1,6 @@
 import React from 'react';
-import photo1 from '../assets/images/OBJETIVOPROFESIONAL.jpg';
-import photo2 from '../assets/images/OBJETIVOPROFESIONAL.jpg';
+import jennyfoto from '../assets/images/jennyfoto.jpg';
+import photo111 from '../assets/images/OBJETIVOPROFESIONAL.jpg';
 import photo3 from '../assets/images/FAMILIA.jpg';
 import gastro1 from '../assets/images/IMG_3884.jpg';
 import gastro2 from '../assets/images/IMG_3887.jpg';
@@ -14,34 +14,72 @@ const InfoPersonal: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-12">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto"> {/* Changed from max-w-4xl to max-w-6xl */}
+        <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h1 className="text-4xl font-bold text-center mb-8">INFORMACIÓN PERSONAL</h1>
+            <h1 className="text-5xl font-bold text-center mb-12 text-gray-800 font-serif">
+              INFORMACIÓN PERSONAL
+            </h1>
 
-            {/* Foto principal */}
-            <div className="w-full h-[500px] bg-gray-200 mb-8"> {/* Changed height */}
-              <img src={photo1} alt="Foto Principal" className="w-full h-full object-cover rounded-lg" />
+            {/* Mi foto */}
+            <div className="w-full h-[600px] bg-gray-200 mb-12 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src={jennyfoto} 
+                alt="Jennyfer Roxana" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
             </div>
 
             {/* Mi receta personal */}
-            <h2 className="text-3xl font-playfair text-center mb-8 text-gray-800">Mi receta personal.</h2>
+            <div className="mb-16">
+              <h2 className="text-4xl font-playfair text-center mb-10 text-gray-800 italic">
+                Mi receta personal
+              </h2>
 
-            <div className="space-y-6 text-gray-700 mb-12">
-              {/* ...existing text content... */}
+              <div className="space-y-6 text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto">
+                <p className="first-letter:text-5xl first-letter:font-serif first-letter:mr-3 first-letter:float-left">
+                  Mi nombre es Jennyfer Roxana Aulla Caicedo, tengo 19 años y actualmente soy estudiante 
+                  de la Escuela Superior Politécnica de Chimborazo. Me encuentro cursando el tercer 
+                  semestre de la carrera de Gastronomía, una pasión que cada día despierta más mi 
+                  creatividad, compromiso y amor por el arte culinario.
+                </p>
+                <p>
+                  Les doy la más cordial bienvenida a este espacio, donde podrán conocer un poco más 
+                  sobre mí, mi formación, mis aspiraciones profesionales y el sabor que quiero dejar 
+                  en el mundo gastronómico.
+                </p>
+                <p>
+                  Desde niña, quedé fascinada al ver cómo la cocina puede transformar ingredientes 
+                  simples en experiencias espectaculares que llenan de alegría a las personas. 
+                  Inspirada por chefs internacionales que admiraba en la televisión, soñé con 
+                  convertirme en una de ellos, y hoy sigo ese camino con pasión y dedicación.
+                </p>
+                <p>
+                  En esta materia de Marketing Gastronómico, espero adquirir las herramientas 
+                  necesarias para promocionar y posicionar mi futura marca gastronómica, agradeciendo 
+                  el acompañamiento de mis profesores que me guían en esta aventura educativa.
+                </p>
+              </div>
             </div>
 
             <hr className="my-12 border-gray-200" />
 
-            {/* Foto adicional */}
-            <div className="my-8 w-full h-[500px] bg-gray-200"> {/* Changed height */}
-              <img src={photo2} alt="Foto Adicional" className="w-full h-full object-cover rounded-lg" />
+            {/* Objetivo Profesional Foto */}
+            <div className="w-full h-[600px] bg-gray-200 mb-12 rounded-lg overflow-hidden shadow-xl">
+              <img 
+                src={photo111} 
+                alt="Objetivo Profesional" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
             </div>
 
             {/* Objetivo profesional */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-semibold mb-4">Objetivo profesional</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Mi objetivo profesional es abrir un restaurante en Italia, un lugar donde la comida conecte con el alma y cada plato cuente una historia inolvidable.
+            <div className="mb-16 max-w-3xl mx-auto">
+              <h3 className="text-3xl font-playfair text-center mb-6 text-gray-800">
+                Objetivo profesional
+              </h3>
+              <p className="text-xl text-gray-700 leading-relaxed text-center italic">
+                Mi objetivo profesional es abrir un restaurante en Italia, un lugar donde la 
+                comida conecte con el alma y cada plato cuente una historia inolvidable.
               </p>
             </div>
 
