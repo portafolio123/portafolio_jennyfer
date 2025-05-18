@@ -4,8 +4,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         {/* Información de contacto */}
         <div className="text-gray-700 text-sm">
+          <p>Mi contacto:</p>
           <p>Celular: 0978706157</p>
-          <p>Correo: jenny@gmail.com</p>
+          <p>Correo: jennyferaulla@hotmail.com</p>
         </div>
 
         {/* Información de la institución */}

@@ -13,21 +13,19 @@ const Listo: React.FC = () => {
       ></div>
       
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 className="text-7xl font-cursive mb-8 animate-fadeIn">¿Listo?</h1>
+        <h1 className="text-7xl font-cursive mb-8 animate-fadeIn">Empezemos</h1>
         
         <div className="bg-black/30 backdrop-blur-sm p-8 rounded-lg">
-          <p className="text-xl mb-6 animate-fadeIn animation-delay-300">
-            A continuación encontrará información sobre mí.
-          </p>
+          
           <p className="text-lg mb-8 animate-fadeIn animation-delay-600">
-            Espero que disfrute de conocer un poco más acerca de Valeria Santos.
+            Le invito a conocer mi portafolio académico, donde he recopilado mis trabajos y proyectos más destacados. Espero que lo disfrute y le inspire a explorar el mundo de la gastronomía y el marketing.
           </p>
           
           <Link
             to="/informacion-personal"
             className="inline-block px-8 py-3 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-300 text-lg"
           >
-            Estoy ansioso por saber
+            Vamos
           </Link>
         </div>
       </div>

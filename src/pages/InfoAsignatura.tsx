@@ -1,5 +1,5 @@
 import React from 'react';
-import { Book, Calendar, Clock, Users } from 'lucide-react';
+import courseImage from '../assets/images/marketing_gastronomico.png';
 
 const InfoAsignatura: React.FC = () => {
   return (
@@ -9,108 +9,56 @@ const InfoAsignatura: React.FC = () => {
         backgroundImage: "url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')",
       }}
     >
-      <div className="bg-black bg-opacity-60 min-h-screen">
+      <div className="bg-black bg-opacity-60 min-h-screen pt-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-extrabold text-center text-white mb-12">
-            Información de la Asignatura
+          <h1 className="text-5xl font-extrabold text-center text-white mb-12 animate-fadeIn">
+            INFORMACIÓN DE LA ASIGNATURA
           </h1>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
-              <div
-                className="bg-cover bg-center text-white p-6"
-                style={{
-                  backgroundImage: "url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=2')",
-                }}
-              >
-                <h2 className="text-3xl font-bold">Marketing Gastronómico</h2>
-                <p className="text-lg opacity-90">Semestre 2023-2024</p>
+              {/* Main Image with adjusted height */}
+              <div className="w-full max-h-[600px] overflow-hidden flex items-center justify-center bg-gray-100">
+                <img 
+                  src={courseImage} 
+                  alt="Marketing Gastronómico" 
+                  className="w-auto h-auto max-w-full max-h-[600px] object-contain hover:scale-105 transition-transform duration-700"
+                />
               </div>
 
-              <div className="p-6">
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div className="flex items-center">
-                    <Calendar className="h-6 w-6 text-blue-600 mr-3" />
-                    <div>
-                      <p className="text-sm text-gray-500">Período Académico</p>
-                      <p className="font-medium">Primer Semestre 2023-2024</p>
-                    </div>
-                  </div>
+              <div className="p-8">
+                {/* Objetivo Section */}
+                <div className="mb-12 animate-fadeIn animation-delay-200">
+                  <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Mi objetivo</h2>
+                  <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                    Adquirir conocimientos y habilidades en marketing de alimentos que me permitan crear 
+                    conceptos innovadores y planes prácticos para promover mis futuros esfuerzos personales 
+                    y para cocinar, con el objetivo de interactuar emocionalmente con la audiencia y 
+                    posicionarme en el mundo gastronómico con identidad y propósito.
+                  </p>
+                </div>
 
-                  <div className="flex items-center">
-                    <Clock className="h-6 w-6 text-blue-600 mr-3" />
-                    <div>
-                      <p className="text-sm text-gray-500">Horario</p>
-                      <p className="font-medium">Lunes y Miércoles, 10:00 - 12:00</p>
-                    </div>
-                  </div>
+                <hr className="my-12 border-gray-200" />
 
-                  <div className="flex items-center">
-                    <Users className="h-6 w-6 text-blue-600 mr-3" />
-                    <div>
-                      <p className="text-sm text-gray-500">Profesor</p>
-                      <p className="font-medium">Chef Ana González</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center">
-                    <Book className="h-6 w-6 text-blue-600 mr-3" />
-                    <div>
-                      <p className="text-sm text-gray-500">Créditos</p>
-                      <p className="font-medium">4 Créditos</p>
-                    </div>
+                {/* Syllabus Section */}
+                <div className="mb-12 animate-fadeIn animation-delay-400">
+                  <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Sílabo de la asignatura</h2>
+                  <div className="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <iframe
+                      src="/silabo_marketing.pdf"
+                      className="w-full h-[700px] rounded-lg"
+                      title="Sílabo de Marketing Gastronómico"
+                    />
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-semibold mb-3">Descripción de la Asignatura</h3>
-                <p className="text-gray-700 mb-6">
-                  Esta asignatura proporciona una introducción completa al marketing gastronómico, explorando estrategias 
-                  para promover experiencias culinarias únicas. Los estudiantes aprenderán a aplicar conceptos de marketing 
-                  en el contexto de la gastronomía.
-                </p>
-
-                <h3 className="text-2xl font-semibold mb-3">Objetivos de Aprendizaje</h3>
-                <ul className="list-disc list-inside text-gray-700 mb-6">
-                  <li>Comprender los principios del marketing aplicado a la gastronomía</li>
-                  <li>Diseñar estrategias para promocionar productos y servicios culinarios</li>
-                  <li>Analizar tendencias en la industria gastronómica</li>
-                  <li>Desarrollar habilidades de comunicación efectiva en el sector</li>
-                  <li>Aplicar técnicas de branding en negocios gastronómicos</li>
-                </ul>
-
-                <h3 className="text-2xl font-semibold mb-3">Evaluación</h3>
-                <div className="overflow-x-auto">
-                  <table className="min-w-full bg-white">
-                    <thead>
-                      <tr className="bg-gray-100 text-gray-700">
-                        <th className="py-3 px-4 text-left">Componente</th>
-                        <th className="py-3 px-4 text-left">Porcentaje</th>
-                        <th className="py-3 px-4 text-left">Fecha</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-200">
-                      <tr>
-                        <td className="py-3 px-4">Proyecto Final</td>
-                        <td className="py-3 px-4">40%</td>
-                        <td className="py-3 px-4">Final del semestre</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4">Examen Parcial</td>
-                        <td className="py-3 px-4">25%</td>
-                        <td className="py-3 px-4">Semana 8</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4">Tareas y Ejercicios</td>
-                        <td className="py-3 px-4">20%</td>
-                        <td className="py-3 px-4">Semanal</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4">Participación</td>
-                        <td className="py-3 px-4">15%</td>
-                        <td className="py-3 px-4">Continua</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                {/* Final Note */}
+                <div className="text-center italic text-gray-700 mt-12 animate-fadeIn animation-delay-600">
+                  <p className="text-lg leading-relaxed">
+                    Cada clase deja huella, y el verdadero aprendizaje florece cuando hay guía, 
+                    pasión y dedicación. A continuación, comparto mi experiencia junto a quien 
+                    ha sido clave en este proceso: mi docente.
+                  </p>
                 </div>
               </div>
             </div>

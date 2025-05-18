@@ -1,60 +1,117 @@
 import React from 'react';
+import photo1 from '../assets/images/OBJETIVOPROFESIONAL.jpg';
+import photo2 from '../assets/images/OBJETIVOPROFESIONAL.jpg';
+import photo3 from '../assets/images/FAMILIA.jpg';
+import gastro1 from '../assets/images/IMG_3884.jpg';
+import gastro2 from '../assets/images/IMG_3887.jpg';
+import team1 from '../assets/images/3.jpg';
+import team2 from '../assets/images/10.jpg';
+import friends from '../assets/images/findeanio.jpg';
+import reina1 from '../assets/images/2.jpg';
+import reina2 from '../assets/images/1.jpg';
 
 const InfoPersonal: React.FC = () => {
   return (
-    <div
-      className="min-h-screen bg-cover bg-center py-12"
-      style={{
-        backgroundImage:
-          'url("https://images.pexels.com/photos/954677/pexels-photo-954677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
-      }}
-    >
-      <div className="bg-black bg-opacity-60 min-h-screen">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden animate-fadeIn">
-              {/* Imagen de fondo interna con animación */}
-              <div className="relative h-64">
-                <div
-                  className="absolute inset-0 bg-cover bg-center animate-zoomIn"
-                  style={{
-                    backgroundImage:
-                      'url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
-                    filter: 'brightness(0.7)',
-                  }}
-                />
-                <h1 className="relative z-10 text-5xl font-cursive text-white text-center pt-20 animate-slideDown">
-                  ¿Quién soy?
-                </h1>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-12">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto"> {/* Changed from max-w-4xl to max-w-6xl */}
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h1 className="text-4xl font-bold text-center mb-8">INFORMACIÓN PERSONAL</h1>
+
+            {/* Foto principal */}
+            <div className="w-full h-[500px] bg-gray-200 mb-8"> {/* Changed height */}
+              <img src={photo1} alt="Foto Principal" className="w-full h-full object-cover rounded-lg" />
+            </div>
+
+            {/* Mi receta personal */}
+            <h2 className="text-3xl font-playfair text-center mb-8 text-gray-800">Mi receta personal.</h2>
+
+            <div className="space-y-6 text-gray-700 mb-12">
+              {/* ...existing text content... */}
+            </div>
+
+            <hr className="my-12 border-gray-200" />
+
+            {/* Foto adicional */}
+            <div className="my-8 w-full h-[500px] bg-gray-200"> {/* Changed height */}
+              <img src={photo2} alt="Foto Adicional" className="w-full h-full object-cover rounded-lg" />
+            </div>
+
+            {/* Objetivo profesional */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold mb-4">Objetivo profesional</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Mi objetivo profesional es abrir un restaurante en Italia, un lugar donde la comida conecte con el alma y cada plato cuente una historia inolvidable.
+              </p>
+            </div>
+
+            {/* Foto objetivo */}
+            <div className="my-8 w-full h-[500px] bg-gray-200"> {/* Changed height */}
+              <img src={photo3} alt="Foto Objetivo" className="w-full h-full object-cover rounded-lg" />
+            </div>
+
+            {/* Mi familia */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold mb-4">Mi familia</h3>
+              <p className="text-gray-700 italic">
+                "Mi pasión por la cocina nació en casa, gracias al apoyo y cariño de mi familia. Ellos han sido el ingrediente secreto que me impulsa a seguir creciendo profesional y personalmente."
+              </p>
+            </div>
+
+            <hr className="my-12 border-gray-200" />
+
+            {/* Más allá de la cocina */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-semibold mb-6">Más allá de la cocina</h3>
+              <p className="text-gray-700 mb-8">
+                A lo largo de mi carrera he tenido la dicha de compartir momentos inolvidables con personas maravillosas. Mis amigos, compañeros de clase y todas las experiencias vividas dentro y fuera de la ESPOCH han sido parte esencial de mi formación.
+              </p>
+
+              {/* Sección Representando a Gastronomía */}
+              <div className="mb-12">
+                <h4 className="text-xl font-semibold mb-4">Representando a Gastronomía:</h4>
+                <div className="grid grid-cols-2 gap-6 mb-4"> {/* Increased gap */}
+                  <img src={gastro1} alt="Gastronomía 1" className="w-full h-96 object-cover rounded-lg" /> {/* Changed height */}
+                  <img src={gastro2} alt="Gastronomía 2" className="w-full h-96 object-cover rounded-lg" />
+                </div>
+                <p className="text-gray-700 italic">
+                  "Compartiendo conocimientos y experiencias en representación de la carrera de Gastronomía, fortaleciendo mi compromiso con lo que amo."
+                </p>
               </div>
 
-              {/* Contenido principal */}
-              <div className="p-8">
-                <p className="text-xl text-center text-gray-700 mb-8 animate-fadeIn animation-delay-200">
-                  Es un placer tenerte aquí.
-                </p>
-
-                <div className="flex flex-col md:flex-row gap-8 items-start">
-                  {/* Imagen con animación */}
-                  <div className="md:w-1/3 animate-slideLeft">
-                    <img
-                      src="https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg"
-                      alt="Chef"
-                      className="w-full rounded-lg shadow-md"
-                    />
-                  </div>
-
-                  {/* Texto con animación */}
-                  <div className="md:w-2/3 space-y-6 animate-slideRight">
-                    <p className="text-gray-700">
-                      Soy Valeria Santos, tengo 19 años y actualmente estoy por terminar el ciclo perteneciente al PAO 3 en la ESPOCH. Me considero una persona positiva, alegre e incluso algo ingenua, pero estoy feliz con quien soy.
-                    </p>
-
-                    <p className="text-gray-700">
-                      Mi pasión por la cocina creció al ver programas como Master Chef y Cake Boss. Disfrutaba cada episodio, asombrándome de cómo un alimento podía transformarse en un plato único con una historia detrás.
-                    </p>
-                  </div>
+              {/* Experiencias de trabajo en equipo */}
+              <div className="mb-12">
+                <h4 className="text-xl font-semibold mb-4">Experiencias de trabajo en equipo:</h4>
+                <div className="grid grid-cols-2 gap-6 mb-4">
+                  <img src={team1} alt="Equipo 1" className="w-full h-96 object-cover rounded-lg" />
+                  <img src={team2} alt="Equipo 2" className="w-full h-96 object-cover rounded-lg" />
                 </div>
+                <p className="text-gray-700 italic">
+                  "Cada evento me permite aplicar lo aprendido y descubrir nuevas formas de conectar con las personas a través de la gastronomía."
+                </p>
+              </div>
+
+              {/* Momentos con amigos */}
+              <div className="mb-12">
+                <h4 className="text-xl font-semibold mb-4">Momentos con amigos:</h4>
+                <div className="mb-4">
+                  <img src={friends} alt="Amigos" className="w-full h-96 object-cover rounded-lg" />
+                </div>
+                <p className="text-gray-700 italic">
+                  "Celebrando fin de año con quienes hacen este camino más divertido"
+                </p>
+              </div>
+
+              {/* Reina y elección */}
+              <div className="mb-12">
+                <h4 className="text-xl font-semibold mb-4">Reina y elección:</h4>
+                <div className="grid grid-cols-2 gap-6 mb-4">
+                  <img src={reina1} alt="Reina 1" className="w-full h-96 object-cover rounded-lg" />
+                  <img src={reina2} alt="Reina 2" className="w-full h-96 object-cover rounded-lg" />
+                </div>
+                <p className="text-gray-700 italic">
+                  "Durante la elección de la Reina, viví una experiencia llena de emociones, gratitud y crecimiento personal."
+                </p>
               </div>
             </div>
           </div>
