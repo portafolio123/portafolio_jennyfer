@@ -72,13 +72,25 @@ const AprendizajePracticoExperimental: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center animate-fadeIn animation-delay-600">
               Marca Grupal
             </h2>
-            <div className="bg-gray-50 rounded-lg p-6 shadow-inner mb-8 animate-fadeIn animation-delay-900">
-              <iframe
-                src="/marca_grupal.pdf"
-                className="w-full h-[500px] rounded-lg"
-                title="Marca Grupal"
-              />
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-gray-50 rounded-lg p-6 shadow-inner animate-fadeIn animation-delay-300">
+                <h3 className="text-xl font-semibold mb-4 text-center">Marca Grupal</h3>
+                <iframe
+                  src="/marca_grupal.pdf"
+                  className="w-full h-[500px] rounded-lg"
+                  title="Marca Grupal"
+                />
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6 shadow-inner animate-fadeIn animation-delay-400">
+                <h3 className="text-xl font-semibold mb-4 text-center">Analísis de Bon Appetit</h3>
+                <iframe
+                  src="/Analísis_de_Bon_Appetit.pdf"
+                  className="w-full h-[500px] rounded-lg"
+                  title="Analísis de Bon Appetit"
+                />
+              </div>
             </div>
+            
             <p className="text-gray-700 text-lg leading-relaxed text-justify animate-fadeIn animation-delay-1000">
               Bon Appétit es el resultado del trabajo en equipo, la creatividad y el amor por la cocina. 
               Representa una propuesta gastronómica fresca, elegante y pensada para conquistar todos los sentidos. 
@@ -86,6 +98,7 @@ const AprendizajePracticoExperimental: React.FC = () => {
               desde la presentación hasta el último bocado.
             </p>
           </div>
+          
         </div>
       </div>
     </div>
