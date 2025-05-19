@@ -69,6 +69,9 @@ const AprendizajePracticoExperimental: React.FC = () => {
 
           {/* Brand Project */}
           <div className="bg-white rounded-lg shadow-lg p-8 transform hover:scale-[1.02] transition-transform duration-300">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center animate-fadeIn animation-delay-600">
+              Marca Grupal
+            </h2>
             <div className="bg-gray-50 rounded-lg p-6 shadow-inner mb-8 animate-fadeIn animation-delay-900">
               <iframe
                 src="/marca_grupal.pdf"

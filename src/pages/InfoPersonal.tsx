@@ -21,12 +21,15 @@ const InfoPersonal: React.FC = () => {
             </h1>
 
             {/* Mi foto */}
-            <div className="w-full h-[600px] bg-gray-200 mb-12 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
-              <img 
-                src={jennyfoto} 
-                alt="Jennyfer Roxana" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
+            <div className="w-full max-w-2xl mx-auto mb-12">
+              <div className="relative bg-gray-200 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <img 
+                  src={jennyfoto} 
+                  alt="Jennyfer Roxana" 
+                  className="w-auto h-auto max-w-full mx-auto object-contain hover:scale-105 transition-transform duration-700"
+                  style={{ maxHeight: '500px' }}
+                />
+              </div>
             </div>
 
             {/* Mi receta personal */}
